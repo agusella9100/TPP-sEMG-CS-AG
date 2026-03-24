@@ -1,0 +1,4 @@
+
+Data de sampleo y aplicación de Pareto para descartar electrodos en gestos de mano
+
+https://github.com/JH127/Sample-data

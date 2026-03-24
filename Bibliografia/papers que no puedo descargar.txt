@@ -1,0 +1,40 @@
+papers que no puedo descargar:
+
+https://ieeexplore.ieee.org/document/7591814 (Design of new multi-channel electrodes for surface electromyography signals for signal-processing)
+
+
+Johnson, S.W., Lynn, P.A., Miller, J.S.G. et al. Miniature skin-mounted preamplifier for measurement of surface electromyographic potentials. Med. Biol. Eng. Comput. 15, 710–711 (1977). https://doi.org/10.1007/BF02457936
+
+Long-term recording of electromyographic activity from multiple muscles to monitor physical activity of participants with or without a neurological disorder 10.1515/bmt-2017-0104
+
+
+Electrical concepts in the surface electromyographic signal 10.1007/s10484-009-9118-x
+
+
+
+
+A Novel Dry Active Electrode for EEG Recording
+https://ieeexplore.ieee.org/document/4034032
+
+
+Comparison of Dry and Wet Electrodes for Detecting Gastrointestinal Activity Patterns from Body Surface Electrical Recordings
+https://link.springer.com/article/10.1007/s11571-018-9481-5
+
+Probablemente clave
+Sampling, noise-reduction and amplitude estimation issues in surface electromyography
+https://www.sciencedirect.com/science/article/abs/pii/S1050641101000335
+
+CLAVE:
+
+	Surface EMG Multichannel Measurements Using Active, Dry Branched Electrodes https://link.springer.com/chapter/10.1007/978-3-319-13117-7_1 
+	Guerrero, F.N., Spinelli, E. (2015). Surface EMG Multichannel Measurements Using Active, Dry Branched Electrodes. In: Braidot, A., Hadad, A. (eds) VI Latin American Congress on 	Biomedical Engineering CLAIB 2014, Paraná, Argentina 29, 30 & 31 October 2014. IFMBE Proceedings, vol 49. Springer, Cham. https://doi.org/10.1007/978-3-319-13117-7_1
+
+
+Clave 
+
+Design and verification of a wearable wireless 64-channel high-resolution EEG acquisition system with wi-fi transmission
+https://link.springer.com/article/10.1007/s11517-023-02879-y
+" BCI instruments with high signal quality are typically heavy and large. Thus, recording electroencephalography (EEG) signals is an inconvenient task. In recent years, system-on-chip (SoC) approaches have been integrated into BCI research, and sensors for wireless portable devices have been developed; however, there is still considerable work to be done. As neuroscience research has advanced, EEG signal analyses have come to require more accurate data. Due to the limited bandwidth of Bluetooth wireless transmission technology, EEG measurement systems with more than 16 channels must be used to reduce the sampling rate and prevent data loss. Therefore, the goal of this study was to develop a multichannel, high-resolution (24-bit), high-sampling-rate EEG BCI device that transmits signals via Wi-Fi. We believe that this system can be used in neuroscience research. The EEG acquisition system proposed in this work is based on a Cortex-M4 microcontroller with a Wi-Fi subsystem, providing a multichannel design and improved signal quality. This system is compatible with wet sensors, Ag/AgCl electrodes, and dry sensors."
+
+
+Design and implementation of a scalable and high-throughput EEG acquisition and analysis system

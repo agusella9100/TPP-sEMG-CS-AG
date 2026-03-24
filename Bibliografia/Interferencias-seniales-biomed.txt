@@ -1,0 +1,100 @@
+Anotaciones a preguntar y averiguar tpp
+
+##########################################################################################
+-----------------------   " INTERFERENCIA VS RUIDO "    --------------------------------
+
+INTERFERENCIA:  
+	Es toda señal no deseada medida a la salida de un sistema, sumada a la señal biológica de interés, y que dificulta su correcta interpretación
+
+SEÑAL NO DESEADA:
+	señales de origen biológico que interfieren con la señal de interés --> la diferencio del ruido electrico
+
+RUIDO: 
+	designaremos asi a la interferencia por factores eléctrico/electrónico
+
+###########################################################################################
+------------------------ Fuentes de interferencias -------------------------------------
+
+> ruido por 50/60 HZ de la linea de alimentación
+
+> Otras fuentes de RF:
+	Tubos de luz --> veo picos de 1 a 2 kHz
+	interferencias internas de los propios equipos electrónicos
+
+> acoplamiento eléctrico -> existe aunque no haya circulación de corriente. hay un desplazamiento por acople capacitivo.  (blindar cables paciente ayurda a reducir Vo. También l bajar la diferencia entre impedancias de las entradas al diferencial (z1-z2 bajarlo))
+					
+
+-------------------------- Causantes de interferencia -------------------------------------
+
+Se pueden dar por saturación o distorsión del registro (por ejemplo cuando queda algo al aire ese sensor se satura y da mediciones cortadas, también si hay algún factor q altere la medición puede distorsionar la señal).
+	
+	Porque pasa:
+	   >	Los registros biológicos son de bajo orden (microa mili volt). Por ello se necesita alta ganancia, para que puedan verse en los registradores (ordenes de volts). Es por ello que hay que ajustar bien el offset que sino se va a ir adhiriendo y amplificando. 		Una solución es con ampli-diferencial y filtrado tmb.
+	    >	Otra causa es q electrodos producen nivel de voltaje elevado en la interfaz electrodo-piel que es debido a factores de ambiente y superficie(piel)
+	    > Cables desconectados producen un elevado potencial.
+
+
+Lazos de tierra, pueden generar un offset en las mediciones o perturbaciones por pulsos electromagnéticos.
+	
+	   >	Se puede dar por enchufes de red o a través de otros equipos si mas de un equipo esta conectado al paciente. También se puede producir entre los equipos la red y paciente. Esto es importante pq si hay diferencias entre los potenciales de las tierras, va a haber un delta_V que genere corriente por el lazo. En cambio si están al mimso potencial, cualquier impulso de un campo magnético que atraviese el área del lazo va a inducir una corriente. 
+	   >	Soluciones
+			-Conexiones de los nodos de tierra en configuración estrella (ósea litera que se conecten a todos en un solo punto físico a tierra pq evita la resistencia de los tramos de cable desde los equipos hasta la tierra per se)
+			- Conexión única al paciente
+			- Entradas diferenciales a los amplis de registro
+
+Transitorios producidos por otros equipos
+
+Interferencias por otros dispositivos interconectados (acoplamiento eléctrico - campo magnético)
+	> Corrientes variables en el tiempo generan campos que inducen corrientes en otras líneas cerradas cercanas.
+	> Cables de electrodos, paciente, entradas de equipos es un lazo cerrado de alta impedancia. 
+	Estos dos factores hacen que ante un mínimo valor de campo B, teniendo una elevada impedancia 'Rd', al inducirse una corriente va a haber una diferencia de potencial que puede ser considerable.
+
+
+
+Nosotros sabemos o vimos el desacople analógico en DC por medio de capacitores grandes (microf). Hoy en dia se usa el filtrado digital de DC.
+		ejemplo ADS1293 para medir biopotenciales
+
+Método para reducir las interferencias que se manifestan en un registro a través del paciente: 
+	"Pierna derecha activa" --> se induce la señal de modo común al paciente, pero invertido en fase y tomándola en el ampli de entrada para asi disminuir la resistencia Zef que se refleja por Zeg (es entre tierra y paciente, bajarla ayuda a reducir V_cm que es la tensión de modo común / offset que hay desde los nodos de entrada a la tierra la cual quiero que sea baja para q se amplifique menos todavia)
+			--> Lo piola es que no afecta al acoplamiento
+
+			--> hay una parte donde se puede poner un capacitor CF en vez de resistencia RF en un ampli para asegurar un polo dominante, y también jugar con la ganancia de ese ampli de realimentación para bajar la Zef (esto es básicamente realimentación de circuitos donde Zef = Zeg / (1+G)). Limitando la saturación al limite de ese lazo de amplificación
+
+
+##########################################################################################################
+
+Fuentes de ruido en un laboratorio:
+50Hz fuentes incandescentes, motores etc q este en la frecuencia de alimentación.
+switches dimmer generan picos (variaciones en ciertas frecuencias)
+
+Para mejorar, usar cables cortos, pq los largos funcionan como antenas y por ende reciben mas ruido electromagnetico. También que sean de par trenzado.
+
+Verificar que este bien potenciada la tierra.
+
+que el ampli diferencial tenga un alto cmrr mayor a 10 db
+
+Una pagina dice que lo mejor para tener buenas mediciones es un sampling rate de 48Khz
+
+Ruido térmico de los equipos, en un documento decía de que en las pieles es mejor que este caliente al rededor de 30 a 31. Pero habría que ver si tiene un problema con la sudoración. También indican para preparar la piel, el exfoliar, sacar pelos y que no este fría ni sudada.
+
+
+
+###################################################################################################3######
+
+Metodos de filtrado de ruido:
+
+ Método LPA-ICI (local polinomial aproximation - intersección de intervalos de confianza) provee señales con alta relación señal-a-ruido (>70%), una alta correlación (>0.899) y una baja distorsión de amplitud (<3.5%). Esto respecto a filtros FIR y DWT (discrete wavelets transformation).
+----> esto es para reducción de ruido en señales eléctricas producidas por descargas parciales.
+----> esto estaba pensado para un análisis de equipos sometidos a altas tensiones (o condiciones que alteren el campo eléctrico no uniforme)
+
+
+
+
+
+ 
+
+
+
+
+Electromiograma
+

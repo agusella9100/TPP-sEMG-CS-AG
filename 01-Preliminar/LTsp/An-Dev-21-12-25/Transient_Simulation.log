@@ -1,0 +1,44 @@
+LTspice 24.0.12 for Windows
+Circuit: * C:\Users\aguse\OneDrive\Escritorio\Fiuba\2025\TPP\0.1 PRELIMINAR\Simulaciones\Preamplificador\Analog-dev-sim\Transient_Simulation.asc
+Start Time: Tue Mar 24 17:36:17 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = modified trap
+WARNING: Less than two connections to node vp-4a.  This node is used by vdd-4a.
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Increasing initial diagonal Gmin to 100
+Increasing initial diagonal Gmin to 1000
+Gmin = 1000
+Gmin = 107.374
+vernier = 0.5
+vernier = 0.25
+Gmin = 28.1475
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+Gmin = 27.6066
+vernier = 0.0078125
+vernier = 0.00390625
+vernier = 0.00195312
+vernier = 0.000976562
+Gmin = 27.5394
+vernier = 0.000488281
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping succeeded in finding the operating point.
+
+Changing Tseed to 3.41797e-09
+Heightened Def Con from 1.51245e-07 to 1.5137e-07
+Total elapsed time: 6.891 seconds.
+

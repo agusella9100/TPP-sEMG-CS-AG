@@ -1,0 +1,41 @@
+Resumen proyecto para Carli (informal)
+
+El proyecto consiste en diseñar el front analógico para la adquisición de señales biopotenciales a través de EMG de superficie en canales múltiples para luego poder procesar e interpretar el conjunto de los impulsos de diferentes zonas musculares con el objetivo de que la información pueda ser de valor para el análisis de miopatías, índices en una rehabilitación o la clasificación de diferentes movimientos del musculo teniendo en cuenta la intensidad del impulso, duración, correlación entre las diferentes fibras musculares de interés. (*El alcance no esta definido por lo que puede ser simplemente la visualización en un buen dashbord y algunas estadísticas de históricos de un mismo sujeto para orientar el tpp a algún producto para gimbros como Ivan pre casamiento de clari y ale).
+
+El principal enfoque en la parte de adquisición analógica es la reducción del ruido/interferencia de la red o 50Hz que por experimentación es la que mas molesta en las mediciones ya que el la intensidad de las señales biopotenciales de los músculos de la pierna (por ejemplo es el musculo que antes tenia como objetivo analizar) es del orden de microvolts [uV] y el de la red puede ser de milivolts [mV]. Es por eso que se usa un amplificador de instrumentación INA2126 (se analizo el ad620 porque es mas común para estos prototipos pero el componente dip/tht me salía mas caro) para rechazar la señal común y amplificar la señal útil. Pero como no es ideal y hay desbalances de impedancias en las entradas del INA, se agregan filtros y otros componentes para que no se cargue la señal y reducir las fuentes de error. También otra parte importante es que se utiliza una fuente simple y por eso se adapta al ina a que funcione con esto.
+
+Hasta ahora tengo probados los diferentes filtros, etapas de amplificación y buffers o seguidores de tensión. Actualmente estoy probando conectar y probar señales de 4mVpap y ver como se comporta la amplificación, reducción de ruido, filtrado, deformación de la señal (si la hay). 
+
+Para que sea completo, el circuito analógico debe tener después un ADC y un modulo de conexión inalámbrico (pienso usar una esp32) además de funcionar a batería lo cual debiera reducir mas todavía la interferencia de la red. Otras cosas a agregar al circuito es un DRL que es una realimentación de la señal común (ruido) en donde están los electrodos, lo cual reduce la interferencia de varias fuentes y seria bueno para hacer una comparativa de la eficacia y mejora en la adquisición de datos con y sin este agregado.
+
+La otra área del tpp es el preprocesamiento de las señales adquiridas, esto abarcaría reconstrucción de la señal, si es que hay distorsión; filtrados digitales, segmentación de la data, extracción de características en el tiempo (potencia, forma de onda, longitud), en frecuencia (FFT, espectrograma), como son señales estocásticas y que variá con el tiempo puede usarse "wavelets" que leí que sirve para separar el ruido, ver cambios de frecuencia - tiempo que ayuda a detección de miopatías, compresión de datos y otras cosas mas que pueden ser interesantes analizar.
+ 
+Toda esta parte de procesamiento y luego posible clasificación (que seria interesante de sumar si ya se hace lo otro) puede simplificarse y todavía no esta nada cocinado. Pensaba hablar con Matias Vera, Ceci Galarza y Humberto Torres que hacer para el procesamiento de señales ya que saben mas y este ultimo en especial porque trabaja con señales biomédicas tengo entendido.
+
+En fin, lo importante es tratar de reducir el ruido en la adquisición de las señales, conseguir una solución portátil, escalable, mas económica, facil de usar y que permita analizar las señales. 
+
+
+
+
+
+
+Mail para Ricardo Veiga:
+
+[intro - saludos a ricardo]
+
+
+Sergio Lew me acercó con un doctorado que necesitaba la ayuda en la parte de adquisición pero al no poder avanzar correctamente con la forma en que queríamos encarar la solución decidí seguir por mi lado con un diseño mas amigable y buscando algún tutor + co-tutor con conocimiento en instrumentación y procesamiento de señales.
+
+La idea es hacer un circuito de adquisición de señales biopotenciales por medio de EMG de superficie. Es un proceso no invasivo para adquirir los impulsos musculares.El proyecto se puede desglosar en tres etapas o partes diferenciables.
+
+ La primer etapa es el diseño del circuito analogico para la adquisición de las señales, aca se evalúa que amplificadores de instrumentación conviene usar, el consumo deseado para una aplicación inalámbrica de la solución, la conversión analógica digital y la transmisión de los datos para evitar perdidas de información considerando el entorno, la cantidad de datos y la frecuencia máxima útil de las señales a analizar. Esta etapa concluye con la obtención limpia de los datos, validándolos con mediciones reales que se encuentren en medios científicos y comparando algunos parámetros importantes como por ejemplo la relación señal a ruido. El fin es luego poder tomar mediciones en entornos no controlados o mas cotidianos.
+
+La siguiente etapa corresponde a un preprocesamiento de los datos para crear una base de estas señales. Aquí nos encargamos de mejorar la señal de forma digital para que sea útil a futuro.
+También permitiría ya tener una visualización mas intuitiva de los parámetros importantes de estas señales. 
+
+La ultima parte del proyecto es el análisis de la información con el objetivo de poder detectar y/o predecir miopatías como lo sería una contractura, un desgarro o el alcanzar la fatiga muscular.
+
+En resumen, lo importante es tratar de reducir el ruido en la adquisición de las señales, conseguir una solución portátil, escalable, que una persona común pueda usarla y que permita analizar las señales. Actualmente tenemos ya algunos diseños del circuito principal pero le falta todavía para adquirir señales correctamente.
+
+
+Le escribimos por si puede ayudarnos a definir mejor el scope del tpp, si es posible realizar siendo una estudiante del plan 2009 y uno del 2020, si puede hacerse mas sencillo y cualquier orientación útil para seguir avanzando con este trabajo.

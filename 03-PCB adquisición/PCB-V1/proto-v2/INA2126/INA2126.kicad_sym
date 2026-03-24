@@ -1,0 +1,609 @@
+
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "INA2126" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "IC" (id 0) (at -7.62169 28.5814 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Value" "INA2126" (id 1) (at -7.62819 -35.5982 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "MF" "Texas Instruments" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Description" "\n                        \n                            Instrumentation Amplifier 2 Circuit - 16-SSOP\n                        \n" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Package" "None" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MPN" "INA2126U" (id 7) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Price" "None" (id 8) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "OC_FARNELL" "1459464" (id 9) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "SnapEDA_Link" "https://www.snapeda.com/parts/INA2126/Texas+Instruments/view-part/?ref=snap" (id 10) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MP" "INA2126" (id 11) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "OC_NEWARK" "74C9839" (id 12) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Availability" "In Stock" (id 13) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Check_prices" "https://www.snapeda.com/parts/INA2126/Texas+Instruments/view-part/?ref=eda" (id 14) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (symbol "INA2126_0_0"
+      (polyline
+        (pts (xy -2.54 20.32) (xy -2.54 21.59)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 21.59) (xy -2.54 24.13)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 24.13) (xy -2.54 25.4)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 25.4) (xy 2.54 22.86)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 22.86) (xy -2.54 20.32)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 24.13) (xy -3.81 24.13)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 1.27 15.875) (xy 1.27 15.24)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 15.24) (xy 1.27 14.605)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 14.605) (xy -1.27 14.605)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 14.605) (xy -1.27 15.24)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 15.24) (xy -1.27 15.875)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 15.875) (xy 1.27 15.875)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 18.415) (xy -1.27 17.78)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 17.78) (xy -1.27 17.145)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 17.145) (xy 1.27 17.145)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 17.145) (xy 1.27 17.78)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 17.78) (xy 1.27 18.415)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 18.415) (xy -1.27 18.415)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 21.59) (xy -5.08 21.59)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -5.08 21.59) (xy -5.08 20.32)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.2225 24.13) (xy -1.5875 24.13)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.2225 21.59) (xy -1.5875 21.59)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -1.905 24.4475) (xy -1.905 23.8125)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 2.54 22.86) (xy 7.62 22.86)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.54 5.08) (xy -2.54 6.35)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 6.35) (xy -2.54 8.89)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 8.89) (xy -2.54 10.16)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 10.16) (xy 2.54 7.62)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 7.62) (xy -2.54 5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 12.065) (xy 1.27 12.7)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 12.7) (xy 1.27 13.335)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 13.335) (xy -1.27 13.335)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 13.335) (xy -1.27 12.7)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 12.7) (xy -1.27 12.065)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 12.065) (xy 1.27 12.065)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 1.905) (xy -1.27 2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 2.54) (xy -1.27 3.175)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 3.175) (xy 1.27 3.175)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 3.175) (xy 1.27 2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 2.54) (xy 1.27 1.905)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 1.905) (xy -1.27 1.905)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 8.89) (xy -5.08 8.89)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -5.08 8.89) (xy -5.08 10.16)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.54 6.35) (xy -3.81 6.35)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.2225 8.89) (xy -1.5875 8.89)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.2225 6.35) (xy -1.5875 6.35)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -1.905 6.6675) (xy -1.905 6.0325)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 2.54 7.62) (xy 4.445 7.62)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -7.62 25.4) (xy -3.81 25.4)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -3.81 25.4) (xy -3.81 24.13)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -7.62 20.32) (xy -5.08 20.32)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -5.08 20.32) (xy -5.08 17.78)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -5.08 17.78) (xy -1.27 17.78)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -3.81 6.35) (xy -3.81 5.08)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -3.81 5.08) (xy -7.62 5.08)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -7.62 10.16) (xy -5.08 10.16)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -5.08 15.24) (xy -1.27 15.24)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -5.08 17.78) (xy -5.08 15.24)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 1.27 15.24) (xy 4.445 15.24)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 4.445 15.24) (xy 4.445 7.62)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 1.27 12.7) (xy 4.1275 12.7)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -1.27 12.7) (xy -5.08 12.7)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -5.08 12.7) (xy -5.08 10.16)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -5.08 8.89) (xy -5.08 2.54)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 1.27 2.54) (xy 7.62 2.54)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -5.08 2.54) (xy -1.27 2.54)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.54 -5.08) (xy -2.54 -3.81)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 -3.81) (xy -2.54 -1.27)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 -1.27) (xy -2.54 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 0.0) (xy 2.54 -2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 -2.54) (xy -2.54 -5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 -1.27) (xy -3.81 -1.27)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 1.27 -9.525) (xy 1.27 -10.16)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 -10.16) (xy 1.27 -10.795)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 -10.795) (xy -1.27 -10.795)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 -10.795) (xy -1.27 -10.16)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 -10.16) (xy -1.27 -9.525)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 -9.525) (xy 1.27 -9.525)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 -6.985) (xy -1.27 -7.62)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 -7.62) (xy -1.27 -8.255)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 -8.255) (xy 1.27 -8.255)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 -8.255) (xy 1.27 -7.62)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 -7.62) (xy 1.27 -6.985)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 -6.985) (xy -1.27 -6.985)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 -3.81) (xy -5.08 -3.81)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -5.08 -3.81) (xy -5.08 -5.08)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.2225 -1.27) (xy -1.5875 -1.27)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.2225 -3.81) (xy -1.5875 -3.81)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -1.905 -0.9525) (xy -1.905 -1.5875)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 2.54 -2.54) (xy 7.62 -2.54)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.54 -20.32) (xy -2.54 -19.05)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 -19.05) (xy -2.54 -16.51)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 -16.51) (xy -2.54 -15.24)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 -15.24) (xy 2.54 -17.78)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 -17.78) (xy -2.54 -20.32)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 -13.335) (xy 1.27 -12.7)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 -12.7) (xy 1.27 -12.065)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 -12.065) (xy -1.27 -12.065)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 -12.065) (xy -1.27 -12.7)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 -12.7) (xy -1.27 -13.335)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 -13.335) (xy 1.27 -13.335)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 -23.495) (xy -1.27 -22.86)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 -22.86) (xy -1.27 -22.225)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 -22.225) (xy 1.27 -22.225)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 -22.225) (xy 1.27 -22.86)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 -22.86) (xy 1.27 -23.495)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 -23.495) (xy -1.27 -23.495)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 -16.51) (xy -5.08 -16.51)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -5.08 -16.51) (xy -5.08 -15.24)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.54 -19.05) (xy -3.81 -19.05)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.2225 -16.51) (xy -1.5875 -16.51)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.2225 -19.05) (xy -1.5875 -19.05)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -1.905 -18.7325) (xy -1.905 -19.3675)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 2.54 -17.78) (xy 4.445 -17.78)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -7.62 0.0) (xy -3.81 0.0)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -3.81 0.0) (xy -3.81 -1.27)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -7.62 -5.08) (xy -5.08 -5.08)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -5.08 -5.08) (xy -5.08 -7.62)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -5.08 -7.62) (xy -1.27 -7.62)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -3.81 -19.05) (xy -3.81 -20.32)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -3.81 -20.32) (xy -7.62 -20.32)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -7.62 -15.24) (xy -5.08 -15.24)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -5.08 -10.16) (xy -1.27 -10.16)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -5.08 -7.62) (xy -5.08 -10.16)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 1.27 -10.16) (xy 4.445 -10.16)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 4.445 -10.16) (xy 4.445 -17.78)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 1.27 -12.7) (xy 4.1275 -12.7)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -1.27 -12.7) (xy -5.08 -12.7)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -5.08 -12.7) (xy -5.08 -15.24)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -5.08 -16.51) (xy -5.08 -22.86)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -5.08 -22.86) (xy -1.27 -22.86)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 1.27 17.78) (xy 7.62 17.78)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 1.27 -22.86) (xy 7.62 -22.86)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 1.27 -7.62) (xy 7.62 -7.62)) (stroke (width 0.1524))
+      )
+      (circle (center -5.08 20.32) (radius 0.508)
+        (stroke (width 0.0)) (fill (type none))
+      )
+      (circle (center -5.08 17.78) (radius 0.508)
+        (stroke (width 0.0)) (fill (type none))
+      )
+      (circle (center -5.08 10.16) (radius 0.508)
+        (stroke (width 0.0)) (fill (type none))
+      )
+      (circle (center -5.08 8.89) (radius 0.508)
+        (stroke (width 0.0)) (fill (type none))
+      )
+      (circle (center 4.445 12.7) (radius 0.508)
+        (stroke (width 0.0)) (fill (type none))
+      )
+      (circle (center -5.08 -5.08) (radius 0.508)
+        (stroke (width 0.0)) (fill (type none))
+      )
+      (circle (center -5.08 -7.62) (radius 0.508)
+        (stroke (width 0.0)) (fill (type none))
+      )
+      (circle (center -5.08 -16.51) (radius 0.508)
+        (stroke (width 0.0)) (fill (type none))
+      )
+      (circle (center -5.08 -15.24) (radius 0.508)
+        (stroke (width 0.0)) (fill (type none))
+      )
+      (circle (center 4.445 -12.7) (radius 0.508)
+        (stroke (width 0.0)) (fill (type none))
+      )
+      (rectangle (start -7.62 -33.02) (end 7.62 27.94)
+        (stroke (width 0.254)) (fill (type background))
+      )
+      (pin input line (at -12.7 25.4 0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin input line (at -12.7 5.08 0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin input line (at -12.7 0.0 0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "15"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin input line (at -12.7 -20.32 0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "16"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin output line (at 12.7 22.86 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "6"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 12.7 17.78 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "7"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin output line (at 12.7 -2.54 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "11"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 12.7 -7.62 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "10"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -12.7 20.32 0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "3"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -12.7 10.16 0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "4"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -12.7 -5.08 0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "14"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -12.7 -15.24 0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "13"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin power_in line (at 12.7 2.54 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "5"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin power_in line (at 12.7 -22.86 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "12"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin power_in line (at 12.7 -25.4 180.0) (length 5.08)
+        (name "V+"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "9"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin power_in line (at 12.7 -30.48 180.0) (length 5.08)
+        (name "V-"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "8"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+  )
+)

@@ -1,0 +1,44 @@
+Version 4
+SymbolType BLOCK
+LINE Normal -47 97 -47 -97
+LINE Normal 128 0 -47 97
+LINE Normal -47 -97 128 0
+LINE Normal 192 0 128 0
+LINE Normal 33 -32 33 -96
+LINE Normal 32 32 32 96
+LINE Normal -32 -48 -96 -48
+LINE Normal -32 48 -96 48
+LINE Normal -47 -64 -160 -64
+LINE Normal -47 64 -160 64
+LINE Normal 80 33 80 81
+LINE Normal 67 33 80 33
+RECTANGLE Normal -82 -118 152 118
+WINDOW 0 102 -121 Bottom 2
+WINDOW 3 101 -104 Top 2
+SYMATTR Prefix X
+SYMATTR Value INA126
+SYMATTR ModelFile C:\Users\aguse\OneDrive\Escritorio\Fiuba\2025\TPP\0.1 PRELIMINAR\Simulaciones\Preamplificador\INA126.LIB
+PIN -96 -48 TOP 8
+PINATTR PinName 1 RG1
+PINATTR SpiceOrder 1
+PIN -160 64 TOP 8
+PINATTR PinName 2 Vin-
+PINATTR SpiceOrder 2
+PIN -160 -64 BOTTOM 8
+PINATTR PinName 3 Vin+
+PINATTR SpiceOrder 3
+PIN 32 96 RIGHT 8
+PINATTR PinName 4 V--
+PINATTR SpiceOrder 4
+PIN 80 80 LEFT 8
+PINATTR PinName 5 Ref
+PINATTR SpiceOrder 5
+PIN 192 0 BOTTOM 8
+PINATTR PinName 6 Vo
+PINATTR SpiceOrder 6
+PIN 32 -96 RIGHT 8
+PINATTR PinName 7 V++
+PINATTR SpiceOrder 7
+PIN -96 48 BOTTOM 8
+PINATTR PinName 8 RG2
+PINATTR SpiceOrder 8

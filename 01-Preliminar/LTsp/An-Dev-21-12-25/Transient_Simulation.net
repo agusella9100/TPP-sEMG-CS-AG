@@ -1,0 +1,86 @@
+* C:\Users\aguse\OneDrive\Escritorio\Fiuba\2025\TPP\0.1 PRELIMINAR\Simulaciones\Preamplificador\Analog-dev-sim\Transient_Simulation.asc
+Vsensor N016 0 SINE(0 50u 50 0 0 180) AC 1
+R1 N005 N004 51k
+C1 N005 N004 47n
+E1 N004 N012 N008 0 .5
+E2 N012 N018 N017 0 .5
+Vcm N012 0 1.65
+R3 N003 N005 200k
+R4 N015 N019 200k
+R2 N019 N018 51k
+C2 N019 N018 47n
+VDD-1 Vp-1 0 5
+VSS-1 Vn-1 0 -5
+VDD-2 V+-2 0 3.3
+VSS-2 V--2 0 -3.3
+R1-2 N014 N013 549
+R1-3 0 Vout_HP 1.6k
+C1-3 Vout_HP Vout_IA 10µ
+R2-4A N011 N010 13k
+R1-4A N010 Vout_HP 13k
+C2-4A N011 0 4n
+C1-4A out N010 8.2n
+VDD-4A Vp-4A 0 3.3
+VSS-4A Vn-4A 0 -3.3
+XU1 N001 N009 V+-2 V--2 Vout_IA Vref N013 N014 AD620
+R5 0 N020 5k
+R6 N020 V+-2 5k
+XU3 N015 N009 Vp-1 Vn-1 N009 TL072
+XU2 N003 N001 Vp-1 Vn-1 N001 TL072
+XU6 N020 Vref Vp-1 0 Vref TL072
+XU4 N011 N002 Vp-1 Vn-4A out TL072
+Vsensor1 N017 N016 SINE(0 10u 4k 0 0 0) AC 1
+Vsensor2 N007 N006 SINE(0 50u 1hz) AC 1
+Vsensor3 N006 0 SINE(0 50u 50 0 0 0) AC 1
+Vdif N008 N007 SINE(0 100u 200 0 0 0) AC 1
+R7 out N002 27k
+R8 out 0 10k
+.tran 35m ;uic
+* Electrodes simplified model
+.param {Rvar_tot} = 10k {Rvar_a} = 1k
+* TL072 OPERATIONAL AMPLIFIER "MACROMODEL" SUBCIRCUIT
+* CREATED USING PARTS RELEASE 4.01 ON 06/16/89 AT 13:08
+* (REV N/A)      SUPPLY VOLTAGE: +/-15V
+* CONNECTIONS:   NON-INVERTING INPUT
+*                | INVERTING INPUT
+*                | | POSITIVE POWER SUPPLY
+*                | | | NEGATIVE POWER SUPPLY
+*                | | | | OUTPUT
+*                | | | | |
+.SUBCKT TL072    1 2 3 4 5
+*
+C1   11 12 3.498E-12
+C2    6  7 15.00E-12
+DC    5 53 DX
+DE   54  5 DX
+DLP  90 91 DX
+DLN  92 90 DX
+DP    4  3 DX
+EGND 99  0 POLY(2) (3,0) (4,0) 0 .5 .5
+FB    7 99 POLY(5) VB VC VE VLP VLN 0 4.715E6 -5E6 5E6 5E6 -5E6
+GA    6  0 11 12 282.8E-6
+GCM   0  6 10 99 8.942E-9
+ISS   3 10 DC 195.0E-6
+HLIM 90  0 VLIM 1K
+J1   11  2 10 JX
+J2   12  1 10 JX
+R2    6  9 100.0E3
+RD1   4 11 3.536E3
+RD2   4 12 3.536E3
+RO1   8  5 150
+RO2   7 99 150
+RP    3  4 2.143E3
+RSS  10 99 1.026E6
+VB    9  0 DC 0
+VC    3 53 DC 2.200
+VE   54  4 DC 2.200
+VLIM  7  8 DC 0
+VLP  91  0 DC 25
+VLN   0 92 DC 25
+.MODEL DX D(IS=800.0E-18)
+.MODEL JX PJF(IS=15.00E-12 BETA=270.1E-6 VTO=-1)
+.ENDS
+* Señales generadas de frecuencias 1Hz, 50Hz, 200Hz, 4kHz.\nRepresentan ruido de movimiento, red, internos\nSeñal util de 200Hz
+.lib C:\Users\aguse\OneDrive\Escritorio\Fiuba\2025\TPP\Pre-amplificador\ad620-module\AD620-v1.txt
+.backanno
+.end
